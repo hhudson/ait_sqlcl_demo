@@ -1,0 +1,9 @@
+{"highlights":[
+    {"type":"startWith","test":"W","color":"INTENSITY_BOLD,CYAN"},
+    {"type":"startWith","test":"I","color":"INTENSITY_BOLD,CYAN"},
+    {"type":"endWith","test":"MAN","color":"BLUE"},
+    {"type":"contains","test":"MIT","color":"YELLOW"},
+    {"type":"exact","test":"FORD","color":"GREEN"},
+    {"type":"regex","test":"[0-9]{2}","color":"MAGENTA"}
+  ]
+}

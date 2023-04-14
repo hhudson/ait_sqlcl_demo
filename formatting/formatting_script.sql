@@ -8,6 +8,6 @@ SQL> set sqlformat delimited
 
 SQL> set sqlformat json-formatted
 
-SQL> set sqlformat ansiconsole -config=highlight.json
+SQL> set sqlformat ansiconsole -config=formatting/highlight.json
 
 https://github.com/fusesource/jansi/blob/master/src/main/java/org/fusesource/jansi/Ansi.java

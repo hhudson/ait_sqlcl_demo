@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<aliases>
+<alias name="debugsession">
+    <description><![CDATA[Create APEX Session]]>]]></description>
+    <queries>
+    <query>
+    <sql><![CDATA[
+    set serveroutput on
+    begin
+    apex_session.create_session(p_app_id=>:APP_ID,p_page_id=>:PAGE_ID,p_username=>'HAYHUDSO');   
+        
+    apex_debug.enable(p_level => apex_debug.c_log_level_engine_trace); 
+
+    dbms_output.put_line('To view debug messages:');
+    dbms_output.put_line('select * from apex_debug_messages where session_id = '
+        ||apex_util.get_session_state('APP_SESSION') ||' order by message_timestamp');
+
+    end;
+    /
+    ]]></sql>
+    </query>
+    </queries>
+</alias>
+</aliases>

@@ -1,2 +1,0 @@
-SQL> select * from eba_stds_notes;
-

@@ -3,6 +3,7 @@
     {"type":"startWith","test":"I","color":"INTENSITY_BOLD,CYAN"},
     {"type":"exact","test":"United States","color":"RED"},
     {"type":"contains","test":"Sales","color":"NEGATIVE_ON,YELLOW"},
+    {"type":"contains","test":"TODO:","color":"NEGATIVE_ON,RED"},
     {"type":"exact","test":"FORD","color":"GREEN"},
     {"type":"regex","test":"[0-9]{1}","color":"BG_MAGENTA"}
   ]
